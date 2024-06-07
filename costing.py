@@ -13,9 +13,9 @@ def main():
     This app calculates the total cost of a session based on the number of people, group size, price per additional person, session cost for the instructor, and hours.
     """)
     
-    with st.expander("Show formula"):
+    with st.expander("FORMULA"):
         st.markdown(r"""
-        **Formula Used to Calculate the Cost:**
+        **Formula used to Calculate the cost:**
 
         $$
         \text{Total Cost} = s \cdot \left\lceil \frac{n}{g} \right\rceil + p \cdot (n - \left\lceil \frac{n}{g} \right\rceil) \cdot h,
@@ -41,7 +41,7 @@ def main():
             cost = calculate_cost(n, g, p, s, h)
             st.write(f"The total cost of the session is: £{cost:.2f}\n\nThe cost per person is: £{cost/n:.2f}")
         else:
-            st.write("The number of people must be greater than 0 to calculate cost per person.")
+            st.write("The number of people must be greater than 0 for a session to happen.")
 
 if __name__ == "__main__":
     main()
