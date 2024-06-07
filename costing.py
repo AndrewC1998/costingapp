@@ -18,16 +18,16 @@ def main():
         **Formula Used to Calculate the Cost:**
 
         $$
-        \text{Total Cost} = s \cdot \left\lceil \frac{n}{g} \right\rceil + p \cdot (n - \left\lceil \frac{n}{g} \right\rceil) \cdot h
+        \text{Total Cost} = s \cdot \left\lceil \frac{n}{g} \right\rceil + p \cdot (n - \left\lceil \frac{n}{g} \right\rceil) \cdot h,
         $$
 
         where:
-        - \( n \) is the number of people,
-        - \( g \) is the number allowed in a group,
-        - \( s \) is the session cost for the instructor,
-        - \( p \) is the price per additional person,
-        - \( h \) is the number of hours,
-        - \( \left\lceil \cdot \right\rceil \) is the ceiling function.
+        - $ n $ is the number of people,
+        - $ g $ is the number allowed in a group,
+        - $ s $ is the session cost for the instructor,
+        - $ p $ is the price per additional person,
+        - $ h $ is the number of hours,
+        - $ \left\lceil \cdot \right\rceil $ is the ceiling function.
         """)
 
     n = st.number_input("Number of people (n)", min_value=0, step=1, value=0)
