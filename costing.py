@@ -17,9 +17,9 @@ def main():
         st.markdown(r"""
         **Formula Used to Calculate the Cost:**
 
-        \\[
-        \\text{Total Cost} = s \\cdot \\left\\lceil \frac{n}{g} \right\rceil + p \cdot (n - \left\lceil \frac{n}{g} \right\rceil) \cdot h
-        \\]
+        $$
+        \text{Total Cost} = s \cdot \left\lceil \frac{n}{g} \right\rceil + p \cdot (n - \left\lceil \frac{n}{g} \right\rceil) \cdot h
+        $$
 
         where:
         - \( n \) is the number of people,
