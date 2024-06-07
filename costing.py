@@ -22,8 +22,8 @@ def main():
 
     if st.button("Calculate Cost"):
             if n > 0:
-            cost = calculate_cost(n, g, p, s, h)
-            st.write(f"The total cost of the session is: £{cost:.2f}\n\nThe cost per person is: £{cost/n:.2f}")
+                cost = calculate_cost(n, g, p, s, h)
+                st.write(f"The total cost of the session is: £{cost:.2f}\n\nThe cost per person is: £{cost/n:.2f}")
 
 if __name__ == "__main__":
     main()
