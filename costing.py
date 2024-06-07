@@ -21,10 +21,9 @@ def main():
     h = st.number_input("Hours (h)", min_value=0.0, step=0.01, value=1.0)
 
     if st.button("Calculate Cost"):
-        cost = calculate_cost(n, g, p, s, h)
-        st.write(f"The total cost of the session is: £{cost:.2f}")
-        if n > 0:
-            st.write(f"\nThe cost per person is: £{cost/n:.2f}")
+            if n > 0:
+            cost = calculate_cost(n, g, p, s, h)
+            st.write(f"The total cost of the session is: £{cost:.2f}\n\nThe cost per person is: £{cost/n:.2f}")
 
 if __name__ == "__main__":
     main()
