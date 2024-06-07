@@ -14,11 +14,11 @@ def main():
     """)
     
     with st.expander("Show formula"):
-        st.markdown("""
+        st.markdown(r"""
         **Formula Used to Calculate the Cost:**
 
         \[
-        \text{Total Cost} = s \cdot \lceil \frac{n}{g} \rceil + p \cdot (n - \lceil \frac{n}{g} \rceil) \cdot h
+        \text{Total Cost} = s \cdot \left\lceil \frac{n}{g} \right\rceil + p \cdot (n - \left\lceil \frac{n}{g} \right\rceil) \cdot h
         \]
 
         where:
@@ -27,7 +27,7 @@ def main():
         - \( s \) is the session cost for the instructor,
         - \( p \) is the price per additional person,
         - \( h \) is the number of hours,
-        - \( \lceil \cdot \rceil \) is the ceiling function.
+        - \( \left\lceil \cdot \right\rceil \) is the ceiling function.
         """)
 
     n = st.number_input("Number of people (n)", min_value=0, step=1, value=0)
