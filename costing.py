@@ -15,7 +15,7 @@ def main():
     
     with st.expander("FORMULA"):
         st.markdown(r"""
-        **Formula used to Calculate the cost:**
+        **Formula used to calculate the cost:**
 
         $$
         \text{Total Cost} = s \cdot \left\lceil \frac{n}{g} \right\rceil + p \cdot (n - \left\lceil \frac{n}{g} \right\rceil) \cdot h,
