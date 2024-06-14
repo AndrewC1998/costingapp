@@ -3,7 +3,7 @@ import math
 
 # Function definition
 def calculate_cost(n, g, p, s, h):
-    return s * math.ceil(n / g) + p * (n - math.ceil(n / g)) * h
+    return (s * math.ceil(n / g) + p * (n - math.ceil(n / g))) * h
 
 # Streamlit app
 def main():
@@ -18,7 +18,7 @@ def main():
         **Formula used to calculate the cost:**
 
         $$
-        \text{Total Cost} = s \cdot \left\lceil \frac{n}{g} \right\rceil + p \cdot (n - \left\lceil \frac{n}{g} \right\rceil) \cdot h,
+        \text{Total Cost} = \Bigg( s \cdot \left\lceil \frac{n}{g} \right\rceil + p \cdot \Big( n - \left\lceil \frac{n}{g} \right\rceil\Big) \Bigg) \cdot h,
         $$
 
         where:
